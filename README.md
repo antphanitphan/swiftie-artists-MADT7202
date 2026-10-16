@@ -7,7 +7,7 @@ A brand that wants to reach Taylor Swift's fans should not simply pick the artis
 
 ![Artist network around Taylor Swift's audience, seed removed](fig_a4_network.png)
 
-*Seed removed, cutoff 0.30. Blue = the 30 artists Last.fm lists as similar to Swift (size = bridge robustness); grey dots = artists outside Swift's circle; (n) = number of such neighbours. Data: Last.fm.*
+*14 of the 30 artists Last.fm lists as similar to Swift (seed removed, cutoff 0.30). Each keeps its 3 strongest links plus every link into the country cluster (teal). Node size = bridge robustness across 12 configurations; orange = Maisie Peters (most robust bridge); grey = Sabrina Carpenter (most similar to Swift). The orange edge (0.53) is the only country link that survives cutoff 0.4. Data: Last.fm.*
 
 ---
 
@@ -93,7 +93,8 @@ A spreadsheet can rank artists by similarity to Swift, but that only finds the *
 | `robustness_12configs.csv` | Bridge rank of every candidate across the 12 configurations, plus tag-graph rank |
 | `robustness_12configs_top3.csv` | Top-3 bridges per configuration |
 | `summary_for_A4.csv` | All numbers used on the one-page report |
-| `fig_a4_network.png` | Figure on the one-page report |
+| `fig_a4_network.png` | Figure on the one-page report (14 key artists) |
+| `fig_full_graph_key_nodes.png` | Full-graph view: the 30 candidates plus all outside artists |
 | `fig_network.png`, `fig_scatter.png` | Exploratory figures (full graph; similarity vs betweenness) |
 
 ## How to reproduce
